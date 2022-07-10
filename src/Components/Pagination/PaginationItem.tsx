@@ -22,12 +22,13 @@ export function PaginationItem({
 
   return (
     <>
-      <button
+      <a
         className="w-5 h-5 bg-zinc-800 hover:brightness-75 text-zinc-100 p-5 mx-2 rounded-full inline-flex items-center justify-center"
         onClick={() => onPageChange(number)}
+        href="#main"
       >
         {number}
-      </button>
+      </a>
     </>
   );
 }
