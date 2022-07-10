@@ -3,7 +3,7 @@
 </h1>
 
 <h1 align="center">
-    <img src="./public/images/home.png" width="400px"> 
+    <img src="assets/fetch-data.gif" width="400px"> 
 </h1>
 
 ## 🏷️ Sobre 
