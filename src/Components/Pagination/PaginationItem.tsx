@@ -11,22 +11,22 @@ export function PaginationItem({
 }: PaginationItemProps) {
   if (isCurrent) {
     return (
-      <button 
+      <button
         className="w-5 h-5 bg-zinc-700 text-zinc-100 p-5 mx-2 rounded-full inline-flex items-center justify-center "
         disabled
       >
-      {number}
+        {number}
       </button>
-    )
+    );
   }
 
   return (
     <>
-      <button 
+      <button
         className="w-5 h-5 bg-zinc-800 hover:brightness-75 text-zinc-100 p-5 mx-2 rounded-full inline-flex items-center justify-center"
         onClick={() => onPageChange(number)}
       >
-      {number}
+        {number}
       </button>
     </>
   );

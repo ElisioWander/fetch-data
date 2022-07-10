@@ -6,8 +6,7 @@ import "./global.css";
 
 export function App() {
   const [page, setPage] = useState(1)
-
-  const { data } = useFetch<[]>("users/ElisioWander/repos")
+  const { data, isFetching } = useFetch<[]>("users/ElisioWander/repos")
 
   const total = data?.length
 
@@ -16,7 +15,9 @@ export function App() {
       <h1 className="text-3xl mb-3">Repositories</h1>
       <Repositories page={page} />
 
-      <Pagination totalCountOfRegisters={total} currentPage={page} onPageChange={setPage} />
+      { !isFetching && (
+        <Pagination totalCountOfRegisters={total} currentPage={page} onPageChange={setPage} />
+      ) }
     </div>
   );
 }
