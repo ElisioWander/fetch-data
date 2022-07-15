@@ -12,7 +12,7 @@
 ---
 
 ## 🛠️ Tecnologias e serviços utilizados
-Foram utilizadas as seguintes tecnologias para desenvolver a aplicação **AnimeList** :
+Foram utilizadas as seguintes tecnologias para desenvolver a aplicação **Fatch.Data** :
 
 - [HTML5](https://html.com/)
 - [React.js](https://pt-br.reactjs.org/)
